@@ -131,7 +131,7 @@ h1 {
     margin-top: -3rem;
     margin-bottom: 0rem;
     font-size: 1.15rem;
-    overflow-y: hidden;
+    overflow-y: scroll;
     resize: none;
     box-sizing: border-box;
     display: inline;
@@ -153,17 +153,6 @@ h1 {
     border-radius: 2rem;
 }
 
-
-/* footer{
-	bottom: -1rem;
-	background-color: blue;
-	position: absolute;
-	width: 100%;
-	background-color: chartreuse;
+::-webkit-scrollbar {
+    width: 7px;
 }
-.footer{
-    position: relative;
-	width: 100%;
-	background-color: blue;
-	text-align: center;
-} */
