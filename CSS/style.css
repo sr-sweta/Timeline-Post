@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
 }
 
 html {
@@ -13,7 +14,7 @@ html {
 body {
     margin: 0;
     height: 100%;
-    background-color: rgb(10, 16, 37);
+    background: linear-gradient(270deg, hsla(120, 100%, 20%, 0.65), hsla(164, 22%, 50%, 0.65));
     box-sizing: border-box;
 }
 
@@ -27,9 +28,10 @@ h1 {
 }
 
 .title {
-    color: rgb(204, 7, 0);
+    color: #145214;
     text-transform: capitalize;
     font-weight: 800;
+    font-family: 'Ephesis', cursive;
 }
 
 .inputDiv {
@@ -50,6 +52,10 @@ h1 {
     transition: .5s;
     font-size: 1.15rem;
     resize: vertical;
+    color: white;
+    background-color: #85e085;
+    z-index: 100;
+    box-shadow: 0 8px 15px -7px #196719;
 }
 
 .add {
@@ -59,8 +65,8 @@ h1 {
     height: 50px;
     border-radius: 5px;
     width: 50%;
-    background-color: lime;
-    color: white;
+    background-color: #196719;
+    color: #ffe6e6;
     cursor: pointer;
     transition: .5s;
     margin-left: 1rem;
@@ -103,11 +109,17 @@ h1 {
     background: none;
     outline: none;
     border: none;
-    color: lime;
-    font-size: 1.4rem;
+    color: #145214;
+    font-size: 1rem;
     font-family: 'Hind', sans-serif;
     margin: 0 0.5rem;
     cursor: pointer;
+    padding: 1rem;
+}
+
+.edit:hover {
+    background-color: white;
+    border-radius: 2rem;
 }
 
 .size {
@@ -119,7 +131,7 @@ h1 {
     margin-top: -3rem;
     margin-bottom: 0rem;
     font-size: 1.15rem;
-    overflow-y: scroll;
+    overflow-y: hidden;
     resize: none;
     box-sizing: border-box;
     display: inline;
@@ -129,10 +141,16 @@ h1 {
     background: none;
     outline: none;
     border: none;
-    color: rgb(208, 228, 33);
-    font-size: 1.4rem;
+    color: #145214;
+    font-size: 1rem;
     font-family: 'Hind', sans-serif;
+    padding: 1rem;
     cursor: pointer;
+}
+
+.remove:hover {
+    background-color: white;
+    border-radius: 2rem;
 }
 
 
