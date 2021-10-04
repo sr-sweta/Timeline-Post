@@ -1,6 +1,5 @@
 const container = document.querySelector('.container');
 var inputValue = document.querySelector('.input');
-var image = document.querySelector('.myImage');
 const add = document.querySelector('.add');
 
 
@@ -11,7 +10,6 @@ if (window.localStorage.getItem("todos") == undefined) {
 
 var todosEX = window.localStorage.getItem("todos");
 var todos = JSON.parse(todosEX);
-
 
 class item {
     constructor(name) {
@@ -27,11 +25,8 @@ class item {
         input.classList.add('item_input');
         input.classList.add('size');
 
-        // var photo = document.createElement('img');
-        // input.disabled = true;
-        // input.
-
         var line = document.createElement('br');
+
         var edit = document.createElement('button');
         edit.classList.add('edit');
         edit.innerHTML = "EDIT";
@@ -73,15 +68,9 @@ class item {
 }
 
 add.addEventListener('click', check);
-// window.addEventListener('keydown', (e) => {
-// 	if(e.which == 13){
-// 		check();
-// 	}
-// })
 
 function check() {
     if (inputValue.value != "") {
-        console.log(inputValue.value);
         new item(inputValue.value);
         todos.push(inputValue.value);
         window.localStorage.setItem("todos", JSON.stringify(todos));
